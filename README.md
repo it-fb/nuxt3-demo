@@ -1,6 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Nuxt3 project development basic configuration
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Content
+Added basic long-term configuration, Example:
+- [x] @pinia/nuxt
+- [x] @unocss/nuxt
+- [x] @nuxt/ui
+- [x] @nuxtjs/device
+- [x] @nuxtjs/color-mode
+- [x] nuxt-icon
 
 ## Setup
 

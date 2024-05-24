@@ -20,8 +20,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@unocss/nuxt": "^0.60.0",
     "nuxt": "^3.11.2",
-    "nuxt-icon": "^0.6.9",
-    "sass": "^1.71.1"
+    "nuxt-icon": "^0.6.9"
 
   },
   "overrides": {
