@@ -2,7 +2,7 @@
 import { appDesc } from "./constants"
 
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   modules: [
     '@nuxt/ui',
@@ -27,7 +27,10 @@ export default defineNuxtConfig({
     },
   },
 
-  css: [],
+  css: [
+    '~/assets/css/style.scss',
+    '@unocss/reset/tailwind.css',
+  ],
 
   devServer: {
     host: '0.0.0.0'
