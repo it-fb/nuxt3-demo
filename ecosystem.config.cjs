@@ -1,10 +1,12 @@
 module.exports = {
     apps: [
         {
-            name: 'nuxt-app',  // 设置启动项目名称
+            name: 'NuxtAppName',
+            port: '3000',
             exec_mode: 'cluster',
             instances: 'max',
             script: './.output/server/index.mjs'
         }
     ]
 }
+
