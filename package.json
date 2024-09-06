@@ -9,18 +9,15 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-  },
   "devDependencies": {
-    "@nuxt/ui": "^2.16.0",
+    "@nuxt/icon": "^1.5.1",
+    "@nuxt/ui": "^2.18.4",
     "@nuxtjs/color-mode": "^3.4.1",
-    "@nuxtjs/device": "^3.1.1",
-    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
-    "@pinia/nuxt": "^0.5.1",
-    "@unocss/nuxt": "^0.60.3",
-    "nuxt": "^3.11.2",
-    "nuxt-icon": "^0.6.10"
-
+    "@nuxtjs/device": "^3.2.2",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.5.4",
+    "@unocss/nuxt": "^0.62.3",
+    "nuxt": "^3.13.1"
   },
   "overrides": {
     "vue": "latest"
