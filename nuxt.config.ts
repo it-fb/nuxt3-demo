@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/device',
     '@nuxtjs/color-mode',
-    '@pinia-plugin-persistedstate/nuxt'
+    'pinia-plugin-persistedstate/nuxt'
   ],
 
   app: {
@@ -29,8 +29,7 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/css/style.scss',
-    '@unocss/reset/tailwind.css',
+    '~/assets/css/style.scss'
   ],
 
   devServer: {
@@ -45,7 +44,7 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
-  piniaPersistedstate: {
+  piniaPluginPersistedstate: {
     cookieOptions: {
       sameSite: 'strict',
       maxAge: 60 * 60 * 24 * 7, // 1 week
@@ -56,8 +55,6 @@ export default defineNuxtConfig({
     classSuffix: '-mode',
   },
 
-  device: {
-    refreshOnResize: true
-  },
+  compatibilityDate: '2024-12-06'
 
 })
