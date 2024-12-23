@@ -1,18 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { appDesc } from "./constants"
+import { appDesc } from './constants'
 
 export default defineNuxtConfig({
-  devtools: { enabled: false },
 
   modules: [
-    '@nuxt/ui',
     '@nuxt/icon',
     '@pinia/nuxt',
+    '@nuxt/image',
     '@unocss/nuxt',
-    '@nuxtjs/device',
+    '@nuxt/eslint',
+    '@vueuse/nuxt',
     '@nuxtjs/color-mode',
-    'pinia-plugin-persistedstate/nuxt'
+    'pinia-plugin-persistedstate/nuxt',
   ],
+  devtools: { enabled: false },
 
   app: {
     head: {
@@ -29,13 +30,17 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/css/style.scss'
+    '~/assets/css/style.scss',
   ],
 
-  devServer: {
-    host: '0.0.0.0'
+  colorMode: {
+    classSuffix: '-mode',
   },
-  
+
+  devServer: {
+    host: '0.0.0.0',
+  },
+
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
@@ -44,17 +49,32 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
+  compatibilityDate: '2024-12-06',
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+      nuxt: {
+        sortConfigKeys: true,
+      },
+    },
+  },
+
   piniaPluginPersistedstate: {
     cookieOptions: {
       sameSite: 'strict',
       maxAge: 60 * 60 * 24 * 7, // 1 week
-    }
+    },
   },
-
-  colorMode: {
-    classSuffix: '-mode',
-  },
-
-  compatibilityDate: '2024-12-06'
 
 })
