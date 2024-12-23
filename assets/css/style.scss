@@ -1,1 +1,12 @@
 // config common css
+
+html.dark {
+  color: #ffffff;
+  background-color: #121212;
+}
+
+body {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { appName } from './constants';
+import { APP } from './constants'
 
 useHead({
-  title: appName
+  title: APP.name,
 })
-
 </script>
 
 <template>

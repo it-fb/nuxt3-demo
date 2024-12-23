@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { appDesc } from './constants'
+import { APP } from './constants'
 
 export default defineNuxtConfig({
 
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: appDesc },
+        { name: 'description', content: APP.desc },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       ],
     },
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   ],
 
   colorMode: {
-    classSuffix: '-mode',
+    classSuffix: '',
   },
 
   devServer: {
