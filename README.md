@@ -6,10 +6,10 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 Added basic long-term configuration, Example:
 - [x] @pinia/nuxt
 - [x] @unocss/nuxt
-- [x] @nuxt/ui
-- [x] @nuxtjs/device
 - [x] @nuxtjs/color-mode
-- [x] nuxt-icon
+- [x] @nuxt/icon
+- [x] @vueuse/nuxt
+- [x] @nuxt/image
 
 ## Setup
 
